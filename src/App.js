@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="bg-gray-100 hover:bg-gray-50">
+        I have classes on start. bg-* classes added after hot reload won't get added to DOM.
+      </h1>
+
+      <p>After start copy markup from README here, styles won't get applied.</p>
     </div>
   );
 }
